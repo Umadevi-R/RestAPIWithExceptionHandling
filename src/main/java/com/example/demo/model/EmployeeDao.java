@@ -27,9 +27,10 @@ public class EmployeeDao {
 		
 	}
 
-	public void addEmployee(Employee emp) {
+	public Employee addEmployee(Employee emp) {
 		emp.setId(empList.size()+1);
 		empList.add(emp);
+		return emp;
 	}
 	
 }
